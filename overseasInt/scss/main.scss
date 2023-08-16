@@ -1,0 +1,18 @@
+// 1. Configuration and helpers
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// 2. Vendors
+@import "vendors/normalize.min";
+
+// 3. Base stuff
+@import "base/fonts";
+@import "base/base";
+
+// 4. Components
+@import "components/header";
+@import "components/footer";
+@import "components/social-list";
+
+// 5. Pages
+@import "pages/home";

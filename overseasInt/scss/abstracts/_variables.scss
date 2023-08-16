@@ -1,0 +1,27 @@
+// MEDIA QUERIES
+$supersize: "screen and (min-width:1920px)";
+$desktop: "screen and (max-width:1920px)";
+$tablet: "screen and (max-width:768px)";
+$mobile: "screen and (max-width: 375px)";
+$tabletlandscape: "screen and (max-width: 768px)";
+
+// Global Colors
+$black: rgba(0, 0, 0, 1);
+$white: rgba(255, 255, 255, 1);
+$grey: rgba(102, 102, 102, 1);
+$input: rgba(0, 0, 0, 0.2);
+$bg: rgba(242, 242, 242, 1);
+
+$base-font-family: "NeueHaasGroteskText Pro";
+
+$headings: h1 h2 h3 h4 h5 h6;
+
+@mixin lhCrop($line-height, $capital-letter: 1) {
+  &::before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc((#{$capital-letter} - #{$line-height}) * 0.5em);
+  }
+}
